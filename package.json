@@ -7,9 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "preinstall": "prisma generate",
     "db:push": "prisma generate; prisma db push",
-    "prepare": "husky"
+    "prepare": "husky && prisma generate"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.0",
