@@ -1,3 +1,10 @@
 {
-  "extends": "next/core-web-vitals"
+  "extends": [
+    "next/core-web-vitals",
+    "plugin:react-server-components/recommended"
+  ],
+  "rules": {
+    "react-hooks/exhaustive-deps": "off",
+    "react-server-components/use-client": "warn"
+  }
 }
